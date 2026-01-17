@@ -1,0 +1,137 @@
+:root {
+    --primary: #1e3a8a;
+    --secondary: #3b82f6;
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #1f2933;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* Section */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+/* List siswa */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 6px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    section {
+        margin: 20px;
+    }
+}
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    min-width: 700px;
+}
+
+td {
+    white-space: nowrap;
+}
