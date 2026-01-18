@@ -202,48 +202,15 @@ a:hover {
 }
 @media (max-width: 600px) {
   .header-flex {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
   }
 
   .logo-box img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 }
-.header {
-  background: linear-gradient(135deg, #1e40af, #2563eb);
-  padding: 30px 20px;
-  color: white;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* LOGO */
-.logo {
-  width: 70px;        /* ukuran logo */
-  height: 70px;
-  object-fit: contain;
-}
-
-/* TEKS */
-.header-text h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-.header-text p {
-  margin: 5px 0 0;
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-
-
 
 
