@@ -214,6 +214,13 @@ a:hover {
     height: 40px;
   }
 }
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
 
 
 
