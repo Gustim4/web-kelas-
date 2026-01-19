@@ -34,7 +34,20 @@ header p {
     margin-top: 10px;
     opacity: 0.9;
 }
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45); /* gelap tipis */
+}
+header {
+    position: relative;
+}
 
+.header-flex {
+    position: relative;
+    z-index: 1;
+}
 /* Navigation */
 nav {
     background-color: white;
@@ -234,6 +247,7 @@ header {
     position: relative;
     z-index: 1;
 }
+
 
 
 
