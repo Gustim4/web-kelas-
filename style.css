@@ -248,6 +248,11 @@ header {
     position: relative;
     z-index: 1;
 }
+header p {
+    display: none !important;
+}
+
+
 
 
 
