@@ -24,30 +24,31 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+/* Konten header di atas overlay */
+.header-flex {
+    position: relative;
+    z-index: 1;
+}
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
+    color: #0b1f3a;
 }
 
 header p {
     margin-top: 10px;
     opacity: 0.9;
-}
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45); /* gelap tipis */
-}
-header {
-    position: relative;
+    color: #123a6f;
 }
 
-.header-flex {
-    position: relative;
-    z-index: 1;
-}
 /* Navigation */
 nav {
     background-color: white;
@@ -237,7 +238,7 @@ header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45); 
+    background: rgba(255, 255, 255, 0.55);
 }
 header {
     position: relative;
@@ -247,12 +248,8 @@ header {
     position: relative;
     z-index: 1;
 }
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.55);
-}
+
+
 
 
 
