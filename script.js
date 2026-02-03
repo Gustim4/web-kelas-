@@ -9,3 +9,4 @@ function openPhoto(imageSrc) {
 function closePhoto() {
   document.getElementById("photoModal").style.display = "none";
 }
+import { SpeedInsights } from "@vercel/speed-insights/next"
