@@ -1,320 +1,135 @@
-<!DOCTYPE html>
-<html lang="id">
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><link href="https://feeldreams.github.io/liatnih/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/typeit@8.6.6/dist/index.umd.js"></script><script src="https://feeldreams.github.io/liatnih/script.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelas X</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<title>Script HTML Untukmu</title>
+<!-- 
+  Made with love by Rayys!
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+  Thanks to all <3
+-->
 </head>
 <body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="audio_sempurna.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/nordic.jpeg" id="wallpaper"/>
+   </div>
+   
+   <div id='Content'>
 
-   <header>
-  <div class="header-flex">
-    <div class="logo-box">
-      <img src="logo.png" alt="Logo Kelas">
-    </div>
-    <div class="header-text">
-      <p>‎ </p>
-      <p>‎ </p>
-      <p>‎ </p>
-      <h1>Website Kelas X-PPLG</h1>
-      <p>‎‎ </p>
-      <p>‎ </p>
-      <p>‎ </p>
-    </div>
-  </div>
-</header>
-    
-    <nav>
-        <a href="#tentang">Tentang</a>
-        <a href="#siswa">Daftar Siswa</a>
-        <a href="#jadwal">Jadwal</a>
-        <a href="#kontak">Kontak</a>
-    </nav>
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Suratnya!</p>
 
-    <section id="tentang">
-        <h2>Tentang Kelas</h2>
-        <p>
-           PPLG adalah singkatan dariPengembangan Perangkat Lunak dan Gim, sebuah jurusan di Sekolah Menengah Kejuruan (SMK)
-            yang fokus pada perancangan, pembuatan, pemeliharaan, dan manajemen aplikasi serta permainan digital . 
-            Jurusan ini membekali siswa dengan keterampilan pemrograman (coding), desain antarmuka (UI/UX), pengembangan aplikasi web/mobile/gim (2D/3D),
-            data dasar, dan algoritma , mempersiapkan mereka untuk karier di industri teknologi sebagai programmer, pengembang game, desainer UI/UX, atau 
-            pengusaha digita, Website ini dibuat untuk menampilkan informasi seputar kelas X-PPLG,
-            termasuk daftar siswa, jadwal pelajaran, dan informasi penting lainnya, kalo ada
-            itu juga.
-        </p>
-    </section>
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/bwa2.gif" id="fotoakhir"/>
+         <img src="https://feeldreams.github.io/bunga.gif" id="fotoakhir2"/>
+         <img src="https://feeldreams.github.io/peachkiss.gif" id="fotoakhir3"/>
+         <img src="https://feeldreams.github.io/peachhug.gif" id="fotoakhir4"/>
+     </div>
+     
+     <div><blockquote id='bq'>
 
-    <section id="siswa">
-    <h2>Daftar Siswa</h2>
+       <!-- Konten Pembukaan -->
+       <p id="kalimat">Hai, </p>
+       <p id="kalimatb">Aku cuma mau bilang nih,</p>
+       <p id="kalimatb2">Good Morning, <b id="namakamu"></b>! Jangan lupa mandi, sarapan, dan semangat jalani harinya <3</p>
+       <p id="kalimatc">Gaboleh nyerah kalau ada masalah yaa.. 😍❤️</p>
 
-    <div class="siswa-container">
-        <div class="siswa-card">
-            <h3>agni</h3>
-            <p>No Absen: 01</p>
-        </div>
+       <!-- Konten Pilihan Kado -->
+       <p id="kalimatd">Oh iya, coba pilih <b>kado</b> di bawah ini! 😆❤️</p>
+       <div id="kolombaru">
+         <li><img src="https://feeldreams.github.io/kadoin.png" onClick="rnkado = 1;otomatis();"/></li>
+         <li><img src="https://feeldreams.github.io/kadoin.png" onClick="rnkado = 2;otomatis();"/></li>
+         <li><img src="https://feeldreams.github.io/kadoin.png" onClick="rnkado = 3;otomatis();"/></li>
+       </div>
+       
+       <!-- Konten Isi Kado -->
+       <p id="kado1">sebenernya tadi aku mau vn tapi males jadinya aku bikin ini ajadeh, semoga hari kamu cerah yaa, love you btw🗿</p>
+       <p id="kado2">Selamat pagi, <b id="namakamu2"></b>! Matahari boleh bersinar terik, tapi hanya <b id="namakamu3"></b> yang paling menarik,oh iya coba buka ulang web ini terus pilih kado yang pertama 🙄 </p>
+       <p id="kado3">sebenernya tadi aku mau vn tapi males jadinya aku bikin ini ajadeh, semoga hari kamu cerah yaa, oh iya coba buka ulang web ini terus pilih kado yang pertama 🙄</p>
+       
+     </blockquote></div>
 
-        <div class="siswa-card">
-            <h3>Adli</h3>
-            <p>No Absen: 02</p>
-        </div>
+     <!-- Tombol Multifungsi -->
+     <div id="Tombol">
+       <a id="By" onClick="multifungsi()">
+         <b id="tmbl">Lanjut</b>
+       </a>
+     </div>
+     
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA" class="sembunyi">Awww, Good Morning too!</span>
+	 
+     <!-- Nomor WhatsApp Kamu -->
+     <!-- Biarkan 628 jika Tak Perlu -->
+     <span id="nomorWA">628</span>
+     
+   </div>
 
-         <div class="siswa-card">
-            <h3>abi</h3>
-            <p>No Absen: 03</p>
-        </div>
+<!-- Jangan Edit Bagian Ini --><script>
+  ftom=0;ftganti=0;flag=1;flagg=1;fungsi=0;fungsiAwal=0;pesanwhatsapp = pesanWA.innerHTML;Content.style = "opacity:1;margin-top:16vh;";
+  
+  function memulai(){if(fungsiAwal==0){audio.play();fungsiAwal=1;suratin.style="transition:all .8s ease;transform:scale(10);opacity:0";wallpaper.style="transform: scale(1.5);";ket.style="display:none";setTimeout(mulainama,700)}}
+  
+  async function mulainama() {
+    suratin.style="display:none";ket.style="display:none";
+    var { value: nama } = await swals.fire({
+           title: 'Masukin nama kamu', input: 'text',
+       });
+       if(nama && nama.length < 11){
+           window.nama = nama;namakamu.innerHTML=nama;namakamu2.innerHTML=nama;namakamu3.innerHTML=nama;
+           kalimat.innerHTML+= nama + "! ❤️";
+           kal1 = kalimat.innerHTML;kalimat.innerHTML="";
+           kal2 = kalimatb.innerHTML;kalimatb.innerHTML="";
+           kal22 = kalimatb2.innerHTML;kalimatb2.innerHTML="";
+           kal3 = kalimatc.innerHTML;kalimatc.innerHTML="";
+           kalimatd.style="position:absolute;opacity:0";
 
-         <div class="siswa-card">
-            <h3>asep</h3>
-            <p>No Absen: 04</p>
-        </div>
+           Content.style = "opacity:1;margin-top:4vh";
+           bodyblur.style="opacity:.4";
+           wallpaper.style="transform: scale(1);";
+           fotoakhir.style="display:inline-flex;";setTimeout(ftmuncul,200);
+           bq.style = "position:relative;opacity:1;visibility:visible;transform: scale(1);margin-top:0";
+           setTimeout(mulaiketik1,500);fungsi=1;
+       } else {
+           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');mulainama();
+    }
+  }
+  
+  function ftmuncul(){
+    if(ftganti==0){fotoakhir.style="display:inline-flex;opacity:1;transform:scale(1)";}
+    if(ftganti==1){fotoakhir.src = fotoakhir2.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==2){fotoakhir.src = fotoakhir3.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+    if(ftganti==3){fotoakhir.src = fotoakhir4.src;fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1);";}
+  }
+  function fthilang(){fotoakhir.style="display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)";}
+  function jjfoto(){fotoakhir.style.animation="rto .8s infinite alternate";}
+  
+  function tombol(){ftom=1;Tombol.style="opacity:1;transform: scale(1);";if(fungsi==2){tmbl.innerHTML="💌 Kirim";ftom=2;}} ininomorkamu = nomorWA.innerHTML;if(ininomorkamu==628){ininomorkamu = "";}
+  function multifungsi(){if(ftom==1){lanjut();} if(ftom==2){menuju();}} 
+  async function menuju(){window.location = "https://api.whatsapp.com/send?phone=" + ininomorkamu + "&text=" + pesanwhatsapp;}
 
-         <div class="siswa-card">
-            <h3>andri</h3>
-            <p>No Absen: 05</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>azili</h3>
-            <p>No Absen: 06</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>gusti</h3>
-            <p>No Absen: 07</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>hykal</h3>
-            <p>No Absen: 08</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>ilham</h3>
-            <p>No Absen: 09</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>kevin</h3>
-            <p>No Absen: 10</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>faisal</h3>
-            <p>No Absen: 11</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>zidab</h3>
-            <p>No Absen: 12</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>najib</h3>
-            <p>No Absen: 13</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>rapim</h3>
-            <p>No Absen: 14</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>rapin</h3>
-            <p>No Absen: 15</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>aldi</h3>
-            <p>No Absen: 16</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>ayumi</h3>
-            <p>No Absen: 17</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>kenzi</h3>
-            <p>No Absen: 18</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>nizam</h3>
-            <p>No Absen: 19</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>panji</h3>
-            <p>No Absen: 20</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>raviqi</h3>
-            <p>No Absen: 21</p>
-        </div>
-
-         <div class="siswa-card">
-            <h3>rico</h3>
-            <p>No Absen: 22</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>rival</h3>
-            <p>No Absen: 23</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>riza</h3>
-            <p>No Absen: 24</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>mamun</h3>
-            <p>No Absen: 25</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>ilman</h3>
-            <p>No Absen: 26</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>mafrul</h3>
-            <p>No Absen: 27</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>perido</h3>
-            <p>No Absen: 28</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>sheva</h3>
-            <p>No Absen: 29</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>rani</h3>
-            <p>No Absen: 30</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>sava</h3>
-            <p>No Absen: 31</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>regina</h3>
-            <p>No Absen: 32</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>salwa</h3>
-            <p>No Absen: 33</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>parhan</h3>
-            <p>No Absen: 34</p>
-        </div>
-
-        <div class="siswa-card">
-            <h3>kamila</h3>
-            <p>No Absen: 35</p>
-            
-        <div class="siswa-card">
-            <h3>{}</h3>
-            <p>No Absen: 36</p>
-        </div>
-    </div>
-</div>
-
-
-
-<section id="jadwal">
-    <h2>Jadwal Pelajaran</h2>
-
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>Hari</th>
-                    <th>Jam 1</th>
-                    <th>Jam 2</th>
-                    <th>Jam 3</th>
-                    <th>Jam 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Senin</td>
-                    <td>Penjas (Pak APN)</td>
-                    <td>Informatika (Pak Skom)</td>
-                    <td>DDP (Pak Irvan)</td>
-                    <td>PLG (Pak Irvan)</td>
-                </tr>
-                <tr>
-                    <td>Selasa</td>
-                    <td>PAI (Pak Azizi)</td>
-                    <td>Informatika (Pak Irvan)</td>
-                    <td>B. Inggris (Mis. Iis)</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <td>Rabu</td>
-                    <td>IPAS (Bu Rena)</td>
-                    <td>Matematika (Bu Andam)</td>
-                    <td>PKN (Bu Hilda)</td>
-                    <td>S. Indo (Bu Neng)</td>
-                </tr>
-                <tr>
-                    <td>Kamis</td>
-                    <td>Informatika (Pak Eskom)</td>
-                    <td>B. Indo (Bu Fitri)</td>
-                    <td>Mulok (Pak Diki)</td>
-                    <td>IPAS (Bu Rena)</td>
-                </tr>
-                <tr>
-                    <td>Jumat</td>
-                    <td>B. Indo (Bu Fitri)</td>
-                    <td>SBK (Pak Rian)</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</section>
-
-
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <p>Instagram Kelas:@x.pplgskensa</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Kelas X-PPLG,info kls.yt:xawwmal </p>
-    </footer>
-
+  const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.innerHTML);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+  audio = new Audio('' + linkmp3.src);
+  
+  function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<!-- Sampai Sini -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
